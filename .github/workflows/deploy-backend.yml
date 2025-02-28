@@ -55,7 +55,7 @@ jobs:
           tags: aphichaya8/234-deploylab-backend:latest
 
       # Copy file to the target host via SCP
-      - name: Copy File via SCP
+      - name: Copy File via ssh password
         uses: appleboy/scp-action@v0.1.7
         with:
           host: ${{ secrets.HOST_SERVER }}
